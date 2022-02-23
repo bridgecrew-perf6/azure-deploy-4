@@ -21,9 +21,13 @@ variable "private_ip_allocation" {
   description = "Dynamic / Static IP allocation"
 }
 
-# Define Windows VM variables
+# Define VM variables
 variable "vm_prefix" {
-    description = "prefix to be used for vm naming"
+  description = "prefix to be used for vm naming"
+}
+
+variable "vm_size" {
+  description = "Size "
 }
 
 variable "admin_user" {
@@ -32,6 +36,29 @@ variable "admin_user" {
 
 variable "admin_pass" {
   description = "password for windows vm"
+}
+
+variable "os_caching" {
+  description = "Type of Caching for VM OS"
+}
+
+variable "os_storage_type" {
+  description = "Configures data redundancy storage"
+}
+
+variable "source_publisher" {
+  description = "Publisher for source image reference"
+}
+variable "source_offer" {
+  description = "Offer for source image reference"
+}
+
+variable "source_sku" {
+  description = "Sku for source image reference"
+}
+
+variable "source_version" {
+  description = "Version for source image reference"
 }
 
 # Define SQL Server credentials
