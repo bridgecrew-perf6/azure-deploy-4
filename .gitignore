@@ -1,1 +1,4 @@
-variables.auto.tfvars
+*.tfvars
+
+# ignore .terraform files
+*.terraform
