@@ -1,5 +1,5 @@
-resource "azurerm_windows_virtual_machine" "ddc" {
-    name = format("%s%d", "${var.vm_prefix}", count.index)
+resource "azurerm_windows_virtual_machine" "storefront" {
+    name = format("%s%d", "${var.storefront_prefix}", count.index)
     count = 2
     resource_group_name = azurerm_resource_group.rg.name
     location            = azurerm_resource_group.rg.location

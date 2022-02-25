@@ -61,9 +61,21 @@ variable "source_version" {
   description = "Version for source image reference"
 }
 
+variable "storefront_prefix" {
+  description = "prefix used in storefront naming"
+}
+
+variable "ddc_prefix" {
+  description = "prefix used in ddc naming"
+}
+
 # Define SQL Server credentials
+variable "sql_vm_prefix" {
+  description = "name of mysql server"
+}
+
 variable "sql_license_type" {
-    description = "name of the mysql server"
+  description = "sql license type"
 }
 
 variable "sql_user" {
