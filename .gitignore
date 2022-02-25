@@ -2,3 +2,6 @@
 
 # ignore .terraform files
 *.terraform
+
+# ignore state file
+*.hcl
