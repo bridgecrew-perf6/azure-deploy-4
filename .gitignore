@@ -5,3 +5,5 @@
 
 # ignore state file
 *.hcl
+
+# ignore sql vars
