@@ -1,14 +1,3 @@
-# Set Variables for Storefront-Init
-HostbaseUrl: http://mycitrixlab.mydomain.com
-FarmServers: "{{ hostvars[groups['ddc.0'][0]]['ansible_fqdn'] }},{{ hostvars[groups['ddc.1'][0]]['ansible_fqdn'] }}"
-StoreVirtualPath: /Citrix/Store
-TransportType: HTTP
-GatewayUrl: https://mycitrix.myexternal.com
-GatewaySTAUrls: http://{{ hostvars[groups['ddc.0'][0]]['ansible_fqdn'] }}/scripts/ctxa.dll,http://{{ hostvars[groups['ddc.1'][0]]['ansible_fqdn'] }}/scripts/ctxa.dll
-GatewayName: NSG1
-
-# Set Variables for Storefront-Creation
-
 # The name of your XenDesktop site. For example: "MySite".
 SiteName: MyTestSite
 # The name of your SQL server or SQL server instance (e.g. "SQLServer1.mycompany.com" or "SQLCTX01.mycompany.com\InStance1").

@@ -4,4 +4,4 @@
 *.terraform
 
 # ignore state file
-.terraform.lock.hcl
+*.hcl
